@@ -327,12 +327,8 @@
 </code></pre></div>
 <ol start="7">
 <li>
-<p>Close the Github tab and return to the AMP dialog.  Click the <strong>Configure Project</strong> button.
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_configure_project.png"><img alt="Click Configure Project" src="images/click_configure_project.png"/></a></p>
-</li>
-<li>
-<p>Disable Spark, if enabled.
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/disable_spark.png"><img alt="Disable Spark" src="images/disable_spark.png"/></a></p>
+<p>Close the Github tab and return to the AMP dialog.  Click the <strong>Configure &amp; Deploy</strong> button.
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_configure_and_deploy.png"><img alt="Click Configure Project" src="images/click_configure_and_deploy.png"/></a></p>
 </li>
 <li>
 <p>Click the <strong>Launch Project</strong> button.
@@ -340,18 +336,18 @@
 </li>
 </ol>
 <p>The AMP will begin building.  You will see the two steps that were in the <code>project-metadata.yaml</code> file execute.</p>
-<ol start="10">
+<ol start="9">
 <li>Wait for AMP to complete.  It will take approximately five minutes for the AMP to complete both steps.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/wait_for_amp_to_complete.png"><img alt="Wait for AMP to complete" src="images/wait_for_amp_to_complete.png"/></a></li>
 </ol>
 <h2 id="explore-the-streamlit-project">Explore the Streamlit Project</h2>
 <p>Now that the AMP has completed creating a new project, you can view the contents of the project to see what was created.</p>
-<ol start="11">
+<ol start="10">
 <li>Click <strong>Overview</strong> in the project menu.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_overview.png"><img alt="Click Overview" src="images/click_overview.png"/></a></li>
 </ol>
 <p>The project overview shows any models or jobs that were created, the files contained in the project, and the contents of the <code>README.md</code> markdown file which describe the project.  At the top of the overview page is the message regarding the project creation status which contains a useful link to the return to the project creation status page.</p>
-<ol start="12">
+<ol start="11">
 <li>
 <p>Click <strong>View status page</strong>.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_view_status_page.png"><img alt="Click View status page" src="images/click_view_status_page.png"/></a></p>
@@ -362,9 +358,9 @@
 </li>
 </ol>
 <p>A new tab will open with an overview of the application deployment.  The overview provides a link to the application, the script that created the application, and when the application was last started.</p>
-<ol start="14">
+<ol start="13">
 <li>
-<p>Click the <strong>Logs</strong> tab.
+<p>Click the <strong>Application Logs</strong> tab.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_logs.png"><img alt="Click Logs" src="images/click_logs.png"/></a></p>
 </li>
 <li>
@@ -379,7 +375,7 @@
 <p class="admonition-title">Note</p>
 <p>CML applications are long-running web applications.  Unlike sessions, applications do not timeout from inactivity.  The application must use either <code>CDSW_APP_PORT</code> or <code>CDSW_READONLY_PORT</code> as its server port.</p>
 </div>
-<ol start="16">
+<ol start="15">
 <li>
 <p>Click <strong>Files</strong> in the project menu.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_files.png"><img alt="Click Files" src="images/click_files.png"/></a></p>
@@ -394,17 +390,17 @@
 </li>
 </ol>
 <p>This is the file that was used to start the application.  If you look back at the <code>project-metadata.yaml</code> file, you will see where it was specified in the <code>start_application</code> task.</p>
-<ol start="19">
+<ol start="18">
 <li>Click <strong>Sessions</strong> in the project menu.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_sessions.png"><img alt="Click Sessions" src="images/click_sessions.png"/></a></li>
 </ol>
 <p>This is a list of all of the project sessions.  Here, you can see the session used by the AMP to install the Python dependencies.</p>
-<ol start="20">
+<ol start="19">
 <li>Click <strong>Install Dependencies</strong> in the list of sessions.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_install_dependencies.png"><img alt="Click Install Dependencies" src="images/click_install_dependencies.png"/></a></li>
 </ol>
 <p>Again, you see the output of the session. Similarly, you can view the application created by the AMP.</p>
-<ol start="21">
+<ol start="20">
 <li>
 <p>Click <strong>Applications</strong> in the project menu.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_applications.png"><img alt="Click Applications" src="images/click_applications.png"/></a></p>
@@ -415,12 +411,12 @@
 </li>
 </ol>
 <p>This opens a new tab and displays the application.  The URL can be shared and viewed by others.  By default, authentication for applications is enforced on all ports and users cannot create public applications. If desired, the Admin user can allow users to create public applications that can be accessed by unauthenticated users.  Therefore, users will typically have to sign into the CDP environment before opening an application's URL.</p>
-<ol start="23">
+<ol start="22">
 <li>View Streamlit App.
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/view_streamlit_app.png"><img alt="View Streamlit App" src="images/view_streamlit_app.png"/></a></li>
 </ol>
 <h2 id="modify-the-application">Modify the Application</h2>
-<ol start="24">
+<ol start="23">
 <li>
 <p>Return to the Streamlit project.</p>
 </li>
@@ -431,7 +427,7 @@
 <p>Compare the <code>app.py</code> code to the output of the app itself.</p>
 </li>
 <li>
-<p>Click the <strong>Open in Workbench</strong> button.  </p>
+<p>Click the <strong>Open in Session</strong> button.  </p>
 </li>
 <li>
 <p>Change some of the markdown content and reload the app.</p>
@@ -450,7 +446,7 @@
 </li>
 </ol>
 <h2 id="delete-the-project">Delete the Project</h2>
-<ol start="33">
+<ol start="32">
 <li>
 <p>Click Project Settings
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/click_project_settings.png"><img alt="Click Project Settings" src="images/click_project_settings.png"/></a></p>

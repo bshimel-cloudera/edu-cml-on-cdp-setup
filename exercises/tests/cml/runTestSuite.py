@@ -4361,10 +4361,10 @@ indexed = indexer_model.transform(engineered1)
 indexed.select("vehicle_color", "vehicle_color_indexed").show(5)
 
 # Then we use
-# [OneHotEncoder](http://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.feature.OneHotEncoder)
+# [OneHotEncoderEstimator](OneHotEncoderEstimator](https://spark.apache.org/docs/2.4.8/api/python/pyspark.ml.html?highlight=onehotencoderestimator#pyspark.ml.feature.OneHotEncoderEstimator)
 # to generate a set of dummy variables:
-from pyspark.ml.feature import OneHotEncoder
-encoder = OneHotEncoder(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
+from pyspark.ml.feature import OneHotEncoderEstimator
+encoder = OneHotEncoderEstimator(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
 encoder_model = encoder.fit(indexed)
 encoded = encoder_model.transform(indexed)
 encoded.select("vehicle_color", "vehicle_color_indexed", "vehicle_color_encoded").show(5)
@@ -4693,10 +4693,10 @@ indexed = indexer_model.transform(engineered1)
 indexed.select("vehicle_color", "vehicle_color_indexed").show(5)
 
 # Then we use
-# [OneHotEncoder](http://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.feature.OneHotEncoder)
+# [OneHotEncoderEstimator](OneHotEncoderEstimator](https://spark.apache.org/docs/2.4.8/api/python/pyspark.ml.html?highlight=onehotencoderestimator#pyspark.ml.feature.OneHotEncoderEstimator)
 # to generate a set of dummy variables:
-from pyspark.ml.feature import OneHotEncoder
-encoder = OneHotEncoder(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
+from pyspark.ml.feature import OneHotEncoderEstimator
+encoder = OneHotEncoderEstimator(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
 encoder_model = encoder.fit(indexed)
 encoded = encoder_model.transform(indexed)
 encoded.select("vehicle_color", "vehicle_color_indexed", "vehicle_color_encoded").show(5)
@@ -6602,8 +6602,8 @@ from pyspark.ml.feature import StringIndexer
 indexer = StringIndexer(inputCol="vehicle_color", outputCol="vehicle_color_indexed")
 
 # Encode `vehicle_color_indexed`:
-from pyspark.ml.feature import OneHotEncoder
-encoder = OneHotEncoder(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
+from pyspark.ml.feature import OneHotEncoderEstimator
+encoder = OneHotEncoderEstimator(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
 
 # Select and assemble the features:
 from pyspark.ml.feature import VectorAssembler
@@ -6868,8 +6868,8 @@ from pyspark.ml.feature import StringIndexer
 indexer = StringIndexer(inputCol="vehicle_color", outputCol="vehicle_color_indexed")
 
 # Encode `vehicle_color_indexed`:
-from pyspark.ml.feature import OneHotEncoder
-encoder = OneHotEncoder(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
+from pyspark.ml.feature import OneHotEncoderEstimator
+encoder = OneHotEncoderEstimator(inputCols=["vehicle_color_indexed"], outputCols=["vehicle_color_encoded"])
 
 # Select and assemble the features:
 from pyspark.ml.feature import VectorAssembler

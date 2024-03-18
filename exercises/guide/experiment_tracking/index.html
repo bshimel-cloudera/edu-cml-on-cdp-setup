@@ -281,80 +281,88 @@
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/3-enter_git_url.png"><img alt="enter git url" src="images/3-enter_git_url.png"/></a></p>
 </li>
 <li>
-<p>Select <strong>Python 3.9</strong> for the <strong>Kernel</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/4-select_python_kernel.png"><img alt="select python kernel" src="images/4-select_python_kernel.png"/></a></p>
+<p>Select <strong>Advanced Options</strong>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/4-select_advanced_options.png"><img alt="select advanced options" src="images/4-select_advanced_options.png"/></a></p>
+</li>
+<li>
+<p>Ensure Editor is set to <strong>Workbench</strong>, Kernel is set to <strong>Python 3.9</strong>, Edition is set to <strong>Standard</strong>, and select <strong>2023.12</strong> for Version.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/6-select_version.png"><img alt="select version" src="images/6-select_version.png"/></a></p>
+</li>
+<li>
+<p>Click <strong>Add Runtime</strong>.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/7-click_add_runtime.png"><img alt="click add runtime" src="images/7-click_add_runtime.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Create Project</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/5-click_create_project.png"><img alt="click create project" src="images/5-click_create_project.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/8-click_create_project.png"><img alt="click create project" src="images/8-click_create_project.png"/></a></p>
 <p>CML will now checkout the content from Github and add it to the project.</p>
 </li>
 </ol>
 <h2 id="view-code-and-run-job">View Code and Run Job</h2>
 <p>The next step is to look at the code and then run it.  Since this exercise is focused on the use of Experiments feature, the code is very simple.  There is a single file, <code>add.py</code>.  It takes a series of numbers and calculates the sum.  In this example, the numbers passed as arguments to the <code>add.py</code> program are acting as our parameters, the sum() function is acting as our machine learning model, and the <code>total</code> is serving as the prediction or model output.  Obviously, the "model" in this case will be 100% accurate, but it will allow the exploration of the Experiment tracking features of CML.</p>
-<ol start="8">
+<ol start="10">
 <li>
 <p>View the file by selecting the <code>code</code> folder from the list of files.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/6-click_on_code.png"><img alt="click on code" src="images/6-click_on_code.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/9-click_on_code.png"><img alt="click on code" src="images/9-click_on_code.png"/></a></p>
 </li>
 <li>
 <p>Click on the <code>python</code> folder, and then click on the <code>add.py</code> file.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/8-click_on_add.png"><img alt="click on add" src="images/8-click_on_add.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/10-click_on_add.png"><img alt="click on add" src="images/10-click_on_add.png"/></a></p>
 </li>
 <li>
 <p>You can see that it is a very simple, three-line program.  Click <strong>Jobs</strong> in the left-side menu.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/9-click_on_jobs.png"><img alt="click on jobs" src="images/9-click_on_jobs.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/11-click_on_jobs.png"><img alt="click on jobs" src="images/11-click_on_jobs.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>New Job</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/10-click_new_job.png"><img alt="click new job" src="images/10-click_new_job.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/12-click_new_job.png"><img alt="click new job" src="images/12-click_new_job.png"/></a></p>
 </li>
 <li>
 <p>Name the new job <code>Add It Up</code>. Click the <strong>Browse</strong> folder.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/11-browse_for_script.png"><img alt="browse for script" src="images/11-browse_for_script.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/13-browse_for_script.png"><img alt="browse for script" src="images/13-browse_for_script.png"/></a></p>
 </li>
 <li>
 <p>Select the <code>add.py</code> file.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/12-click_select.png"><img alt="click select" src="images/12-click_select.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/14-click_select.png"><img alt="click select" src="images/14-click_select.png"/></a></p>
 </li>
 <li>
 <p>The program accepts a list of numbers, separated by spaces.  Enter something like <code>20 30</code> for the <strong>Arguments</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/13-enter_arguments.png"><img alt="enter arguments" src="images/13-enter_arguments.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/15-enter_arguments.png"><img alt="enter arguments" src="images/15-enter_arguments.png"/></a></p>
 </li>
 <li>
-<p>Click <strong> Create Job</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/14-click_create_job.png"><img alt="click create job" src="images/14-click_create_job.png"/></a></p>
+<p>Click <strong>Create Job</strong>.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/16-click_create_job.png"><img alt="click create job" src="images/16-click_create_job.png"/></a></p>
 </li>
 <li>
-<p>The new job is created, but not executed.  Click <strong>Run as me</strong> to execute the job.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/15-click_run_as_me.png"><img alt="click run as me" src="images/15-click_run_as_me.png"/></a></p>
+<p>The new job is created, but not executed.  Click <strong>Run as [user icon]</strong> to execute the job.
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/17-click_run_as_me.png"><img alt="click run as me" src="images/17-click_run_as_me.png"/></a></p>
 </li>
 <li>
 <p>Once the <strong>Status</strong> has changed to <code>Success</code>, click on the job name.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/16-click_job_name.png"><img alt="click job name" src="images/16-click_job_name.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/18-click_job_name.png"><img alt="click job name" src="images/18-click_job_name.png"/></a></p>
 </li>
 <li>
 <p>The job overview is displayed.  Select the <strong>History</strong> tab.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/17-click_history.png"><img alt="click history" src="images/17-click_history.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/19-click_history.png"><img alt="click history" src="images/19-click_history.png"/></a></p>
 </li>
 <li>
 <p>A list of job runs is displayed. There should only be one job run at this point.  Click on the run.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/18-click_job_run.png"><img alt="click job run" src="images/18-click_job_run.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/20-click_job_run.png"><img alt="click job run" src="images/20-click_job_run.png"/></a></p>
 </li>
 <li>
 <p>View the session output.  The sum of the arguments is displayed.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/19-view_session_output.png"><img alt="view session output" src="images/19-view_session_output.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/21-view_session_output.png"><img alt="view session output" src="images/21-view_session_output.png"/></a></p>
 </li>
 </ol>
 <h2 id="creating-an-experiment">Creating an Experiment</h2>
-<ol start="21">
+<ol start="23">
 <li>
 <p>Click <strong>Files</strong> in the left-side menu.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/21-click_files.png"><img alt="click files" src="images/21-click_files.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/22-click_files.png"><img alt="click files" src="images/22-click_files.png"/></a></p>
 </li>
 <li>
 <p>Navigate to <code>add.py</code> and click <strong>Open in Session</strong>.
-    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/22-click_open_in_session.png"><img alt="click open in session" src="images/22-click_open_in_session.png"/></a></p>
+    <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/23-click_open_in_session.png"><img alt="click open in session" src="images/23-click_open_in_session.png"/></a></p>
 </li>
 <li>
 <p>The file is opened in the Workspace file editor.  An actual session is not needed to edit the file.<br/>
@@ -397,48 +405,48 @@
 </li>
 </ul>
 <p>Click <strong>File</strong> and then <strong>Save</strong>.
-  <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/23-click_save.png"><img alt="click save" src="images/23-click_save.png"/></a></p>
+  <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/24-click_save.png"><img alt="click save" src="images/24-click_save.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Project</strong> to return to the project.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/24-click_project.png"><img alt="click project" src="images/24-click_project.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/25-click_project.png"><img alt="click project" src="images/25-click_project.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Jobs</strong> in the left-side menu.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/25-click_jobs.png"><img alt="click jobs" src="images/25-click_jobs.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/26-click_jobs.png"><img alt="click jobs" src="images/26-click_jobs.png"/></a></p>
 </li>
 <li>
-<p>Click <strong>Run as me</strong> to execute the job again.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/26-click_run_as_me.png"><img alt="click run as me" src="images/26-click_run_as_me.png"/></a></p>
+<p>Click <strong>Run as [user icon]</strong> to execute the job again.
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/27-click_run_as_me.png"><img alt="click run as me" src="images/27-click_run_as_me.png"/></a></p>
 </li>
 <li>
 <p>Once the <strong>Status</strong> changes to <code>Success</code>, click on the job name.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/27-click_on_job.png"><img alt="click on job" src="images/27-click_on_job.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/28-click_on_job.png"><img alt="click on job" src="images/28-click_on_job.png"/></a></p>
 </li>
 <li>
 <p>Click on the <strong>History</strong> tab.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/28-click_on_history.png"><img alt="click on history" src="images/28-click_on_history.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/29-click_on_history.png"><img alt="click on history" src="images/29-click_on_history.png"/></a></p>
 </li>
 <li>
 <p>Click on the latest run.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/29-click_on_run.png"><img alt="click on run" src="images/29-click_on_run.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/30-click_on_run.png"><img alt="click on run" src="images/30-click_on_run.png"/></a></p>
 </li>
 <li>
 <p>In the output, a message is displayed to notify you that a new experiment was created.  Click <strong>Experiments</strong> in the left-side menu.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/30-click_experiments.png"><img alt="click experiments" src="images/30-click_experiments.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/31-click_on_experiments.png"><img alt="click experiments" src="images/31-click_on_experiments.png"/></a></p>
 </li>
 <li>
 <p>Click on the newly created experiment.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/31-click_experiment.png"><img alt="click experiment" src="images/31-click_experiment.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/32-click_experiment.png"><img alt="click experiment" src="images/32-click_experiment.png"/></a></p>
 </li>
 <li>
 <p>Information about the experiment and a list of runs is displayed.  The parameters and metrics for the run are displayed.  Click on the run. 
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/32-click_start_time.png"><img alt="click start time" src="images/32-click_start_time.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/33-click_start_time.png"><img alt="click start time" src="images/33-click_start_time.png"/></a></p>
 </li>
 <li>
 <p>A more detailed view of the run is displayed.  Notice that in addition to the parameters and metrics, a run can have more information like notes, tags, and artifacts.
       Click <strong>Files</strong> in the left-side menu.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/33-click_files.png"><img alt="click files" src="images/33-click_files.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/34-click_files.png"><img alt="click files" src="images/34-click_files.png"/></a></p>
 </li>
 <li>
 <p>Navigate to <code>add.py</code> and click <strong>Open in Session</strong>.
@@ -492,73 +500,73 @@
 </li>
 <li>
 <p>Notice, the list of runs includes the new <strong>Count</strong> metric.  Click on the latest run.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/40-click_on_start_time.png"><img alt="click on start time" src="images/40-click_on_start_time.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/35-click_on_start_time.png"><img alt="click on start time" src="images/35-click_on_start_time.png"/></a></p>
 </li>
 <li>
 <p>The run details includes the new metric too. 
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/41-view_metrics.png"><img alt="view metrics" src="images/41-view_metrics.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/36-view_metrics.png"><img alt="view metrics" src="images/36-view_metrics.png"/></a></p>
 </li>
 <li>
 <p>Scroll down, if needed, and view the Artifacts.  If the job recently completed, the Artifacts may not have updated.  Wait a minute and refresh the page, if you do not see the <code>result.txt</code> file in the list of Artifacts.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/42-view_artifacts.png"><img alt="view artifacts" src="images/42-view_artifacts.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/37-view_artifacts.png"><img alt="view artifacts" src="images/37-view_artifacts.png"/></a></p>
 </li>
 </ol>
 <h2 id="change-the-input-and-compare-runs">Change the Input and Compare Runs</h2>
-<ol start="40">
+<ol start="42">
 <li>
 <p>Click <strong>Jobs</strong> in the left-side menu and click the <code>Add It Up</code> job in the list.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/43-click_job_name.png"><img alt="click job name" src="images/43-click_job_name.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/38-click_job_name.png"><img alt="click job name" src="images/38-click_job_name.png"/></a></p>
 </li>
 <li>
 <p>Click the <strong>Settings</strong> tab.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/44-click_settings.png"><img alt="click settings" src="images/44-click_settings.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/39-click_settings.png"><img alt="click settings" src="images/39-click_settings.png"/></a></p>
 </li>
 <li>
 <p>Edit the Arguments to be something different, like <code>20 30 40</code>.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/45-edit_arguments.png"><img alt="edit arguments" src="images/45-edit_arguments.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/40-edit_arguments.png"><img alt="edit arguments" src="images/40-edit_arguments.png"/></a></p>
 </li>
 <li>
 <p>Scroll down and click <strong>Update Job</strong>
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/46-click_update_job.png"><img alt="click update job" src="images/46-click_update_job.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/41-click_update_job.png"><img alt="click update job" src="images/41-click_update_job.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Run as me</strong>.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/47-click_run_as_me.png"><img alt="click run as me" src="images/47-click_run_as_me.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/42-click_run_as_me.png"><img alt="click run as me" src="images/42-click_run_as_me.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Experiments</strong> in the left-side menu and click on the <code>Add It Up</code> experiment.</p>
 </li>
 <li>
 <p>Select last two runs by clicking the respective checkboxes.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/49-select_last_two_runs.png"><img alt="select last two runs" src="images/49-select_last_two_runs.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/43-select_last_two_runs.png"><img alt="select last two runs" src="images/43-select_last_two_runs.png"/></a></p>
 </li>
 <li>
 <p>Click <strong>Compare</strong>.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/50-click_compare.png"><img alt="click compare" src="images/50-click_compare.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/44-click_compare.png"><img alt="click compare" src="images/44-click_compare.png"/></a></p>
 </li>
 <li>
 <p>Compare the results of the two runs using the table at the top and the various plots.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/51-view_plots.png"><img alt="view plots" src="images/51-view_plots.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/45-view_plots.png"><img alt="view plots" src="images/45-view_plots.png"/></a></p>
 </li>
 </ol>
 <h2 id="commit-the-changes-to-git">Commit the Changes to Git</h2>
 <p>Now that you have modified the <code>add.py</code> code to track metrics, you will commit the changes to git so they won't be lost.</p>
-<ol start="49">
+<ol start="51">
 <li>
 <p>Click <strong>Sessions</strong> in the left-side menu and click <strong>New Session</strong>.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/52-click_sessions.png"><img alt="click sessions" src="images/52-click_sessions.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/46-click_sessions.png"><img alt="click sessions" src="images/46-click_sessions.png"/></a></p>
 </li>
 <li>
 <p>Enter a session name and click <strong>Start Session</strong>.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/53-click_start_session.png"><img alt="click start session" src="images/53-click_start_session.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/47-click_start_session.png"><img alt="click start session" src="images/47-click_start_session.png"/></a></p>
 </li>
 <li>
 <p>Once the session has started, click the <strong>Terminal Access</strong> button.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/54-click_terminal.png"><img alt="click terminal" src="images/54-click_terminal.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/49-click_terminal.png"><img alt="click terminal" src="images/49-click_terminal.png"/></a></p>
 </li>
 <li>
 <p>Enter <code>git status</code> and press <strong>Enter</strong>.  You will see <code>add.py</code> has been modified.
-      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/55-git_status.png"><img alt="git status" src="images/55-git_status.png"/></a></p>
+      <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/50-git_status.png"><img alt="git status" src="images/50-git_status.png"/></a></p>
 </li>
 <li>
 <p>Add the file to git and commit the changes.
@@ -566,7 +574,7 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>git commit -m "Added tracking to add.py"
 </code></pre></div>
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/56-git_add_and_commit.png"><img alt="git add and commit" src="images/56-git_add_and_commit.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="images/51-git_add_and_commit.png"><img alt="git add and commit" src="images/51-git_add_and_commit.png"/></a></p>
 <p>Your file changes have been committed.  Normally, you would push the changes back to a remote repository.  However, in this case, you do not have permission to commit to the remote repository.</p>
 </li>
 </ol>
